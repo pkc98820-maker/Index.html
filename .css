@@ -1,0 +1,227 @@
+/* ---------------- GLOBAL STYLES ---------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f4f7fa;
+    color: #333;
+    line-height: 1.6;
+    padding-bottom: 50px;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.color {
+    color: #0077ff;
+}
+
+.line {
+    width: 90px;
+    margin: 8px auto 20px auto;
+    border: 2px solid #0077ff;
+}
+
+/* ---------------- HEADER ---------------- */
+header {
+    background: #ffffff;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+}
+
+header h1 {
+    font-size: 28px;
+    color: #0077ff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #0077ff;
+    text-decoration: underline;
+}
+
+/* ---------------- MAIN CONTENT ---------------- */
+main {
+    width: 80%;
+    margin: 20px auto;
+}
+
+main img {
+    display: block;
+    margin: 0 auto 20px auto;
+    border-radius: 50%;
+    transition: transform 0.4s ease;
+}
+
+main img:hover {
+    transform: scale(1.05);
+}
+
+/* ---------------- LIST ---------------- */
+ul {
+    padding-left: 40px;
+    margin-bottom: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+/* ---------------- TABLE ---------------- */
+#table {
+    width: 60%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+#table th, #table td {
+    padding: 12px;
+    text-align: center;
+    font-size: 18px;
+}
+
+#table th {
+    background: #0077ff;
+    color: white;
+}
+
+#table tr:nth-child(even) {
+    background: #f0f6ff;
+}
+
+/* ---------------- FORMS ---------------- */
+form {
+    width: 70%;
+    margin: 20px auto;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+form label {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 6px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #0077ff;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    margin-bottom: 15px;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #0053b3;
+}
+
+#button {
+    background: #0077ff;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    font-size: 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#button:hover {
+    background: #0053b3;
+    transform: scale(1.05);
+}
+
+/* ---------------- FOOTER ---------------- */
+footer {
+    margin-top: 40px;
+}
+
+/* ---------------- ANIMATIONS ---------------- */
+h1, h2 {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* ---------------- RESPONSIVE DESIGN ---------------- */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    main {
+        width: 90%;
+    }
+
+    #table {
+        width: 100%;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    main img {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 22px;
+    }
+
+    .nav-links a {
+        font-size: 16px;
+    }
+
+    #button {
+        width: 100%;
+    }
+}

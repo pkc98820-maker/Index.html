@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - MANSHI CHAUDHARI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header id="intro" class="style">
+        <h1>MANSHI CHAUDHARI</h1>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/project.html">Projects</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <h2 class="color">Welcome to My Portfolio</h2>
+        <hr class="line">
+        <p>Hello! I am a web development student. This is my personal portfolio website.</p>
+
+        <!-- ABOUT -->
+        <h2 class="color">About Me</h2>
+        <hr class="line">
+        <img src="https://png.pngtree.com/png-clipart/20220612/original/pngtree-female-face-avatar-in-circle-png-image_7965921.png"
+             alt="Profile image" height="300" width="300">
+
+        <p>I am passionate about learning web development and building creative projects.</p>
+
+        <!-- PROJECTS -->
+        <h2 class="color">My Projects</h2>
+        <hr class="line">
+
+        <ul>
+            <li><b>Portfolio Website:</b> A personal one-page website to showcase your bio, skills and contact details.</li>
+            <li><b>Medium Clone:</b> A simple blog layout that looks like Medium, built only with HTML and CSS.</li>
+            <li><b>Birthday Card:</b> A creative greeting card webpage designed with HTML structure and CSS styling.</li>
+            <li><b>User Form:</b> A form webpage with fields like name, email, and message for practicing form handling.</li>
+        </ul>
+
+        <!-- SKILLS -->
+        <h2 class="color">Technical Skills</h2>
+        <hr class="line">
+
+        <table border="2" id="table">
+            <thead>
+                <tr>
+                    <th class="style">Skill</th>
+                    <th class="style">Level</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>HTML</td>
+                    <td>Beginner</td>
+                </tr>
+
+                <tr>
+                    <td>CSS</td>
+                    <td>Beginner</td>
+                </tr>
+
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Learning</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <h2 class="color">Contact Me</h2>
+        <hr class="line">
+
+        <form id="form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email" required><br><br>
+
+            <label for="message">Message:</label>
+            <textarea id="message" placeholder="Enter your message" rows="3" cols="100"></textarea><br><br>
+
+            <button class="style" id="button">Send</button>
+        </form>
+    </footer>
+
+</body>
+</html>
